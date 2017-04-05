@@ -1,0 +1,4 @@
+div
+	span(ng-class='{ complete: $ctrl.item.complete}') {{$ctrl.item.label}}
+	button(type='button', ng-click='$ctrl.onComplete({ $event: { todo: $ctrl.item } });') Done
+	button(type='button', ng-click='$ctrl.onDelete({ $event: { todo: $ctrl.item } });') Delete

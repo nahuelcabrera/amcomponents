@@ -1,0 +1,1 @@
+<div><span ng-class="{ complete: $ctrl.item.complete}">{{$ctrl.item.label}}</span><button type="button" ng-click="$ctrl.onComplete({ $event: { todo: $ctrl.item } });">Done</button><button type="button" ng-click="$ctrl.onDelete({ $event: { todo: $ctrl.item } });">Delete</button></div>
